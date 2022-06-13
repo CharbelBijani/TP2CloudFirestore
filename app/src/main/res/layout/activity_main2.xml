@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    tools:context=".MainActivity" >
+    tools:context=".MainActivity2" >
 
     <EditText
         android:id="@+id/et_titre"
@@ -47,6 +47,39 @@
             android:layout_weight="0"
             android:onClick="showNote"
             android:text="AFFICHER" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/btn_updateNote"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:layout_weight="0"
+            android:onClick="updateNote"
+            android:text="UPDATE NOTE" />
+
+        <Button
+            android:id="@+id/btn_SupprimerNote"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:layout_weight="0"
+            android:onClick="deleteNote"
+            android:text="SUPPRIMER NOTE" />
+
+        <Button
+            android:id="@+id/btn_toutSupprimer"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:layout_weight="0"
+            android:onClick="deleteAll"
+            android:text="TOUT SUPPRIMER" />
     </LinearLayout>
 
     <TextView
